@@ -12,15 +12,16 @@ using namespace std;
 
 enum IndiceMatrizEntrada { fecha = 0, iEquipo = 1, iGoles = 2, jEquipo = 3, jGoles = 4};
 typedef vector<vector<double>> Matriz;
+typedef vector<vector<int>> Partidos;
 struct Entrada{
     int cantidadEquipos;
     int cantidadPartidos;
-    Matriz matriz;
+    Partidos partidos;
 };
 
 struct CMM{
     Matriz C;
-    vector<double> B;
+    vector<double> b;
     vector<double> r;
 };
 
