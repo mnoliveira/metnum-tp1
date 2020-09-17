@@ -1,0 +1,1 @@
+vector<double> cmm (Entrada entrada);

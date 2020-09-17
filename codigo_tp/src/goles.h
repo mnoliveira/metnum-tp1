@@ -1,0 +1,1 @@
+vector<double> goles (Entrada entrada);

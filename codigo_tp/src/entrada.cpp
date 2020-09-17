@@ -21,12 +21,14 @@ Entrada cargarEntrada(string path) {
     Matriz matriz(entrada.cantidadPartidos, vector<double>(5));
 
     int i = 0, j = 0;
+    //TODO: OJO! aca deberiamos leer en funcion de P no de archivo.eof()
+    //while(i < entrada.cantidadPartidos)
     while (!archivo.eof()){
 
         archivo >> matriz[i][j];
 
         j++;
-        if (j % 5 == 0){
+        if (j % entrada.cantidadEquipos == 0){
             i++;
             j = 0;
         }

@@ -5,10 +5,7 @@
 #ifndef METNUMTP1_ENTRADA_H
 #define METNUMTP1_ENTRADA_H
 
-#include "string"
-#include "definiciones.h"
-
-using namespace std;
+#include "./common.h"
 
 Entrada cargarEntrada(string path);
 
