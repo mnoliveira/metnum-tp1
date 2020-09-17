@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/MetNumTP1.dir/main.cpp.o CMakeFiles/MetNumTP1.dir/src/entrada.cpp.o  -o MetNumTP1.exe -Wl,--out-implib,libMetNumTP1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
