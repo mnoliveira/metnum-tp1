@@ -4,4 +4,4 @@
 #include "src/wp.h"
 #include "src/goles.h"
 
-void write_vector (vector<double> &v, ofstream &output)
+void write_vector (vector<double> &v, ofstream &output);
