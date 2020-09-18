@@ -41,12 +41,23 @@ vector<double> cmm (Entrada entrada) {
     return resolverSistema(entradaCmm.C, entradaCmm.b);
 }
 
-void eliminacionGaussiana (Matriz &mat) {
-
+void eliminacionGaussiana(Matriz &mat, vector<double> &b) {
+    double cociente = 0;
+    for (int i = 0; i < mat.size() - 1; ++i) {
+        for (int j = i + 1; j < mat.size(); ++j) {
+            if (mat[j][i] != 0) {
+                cociente = mat[j][i] / mat[i][i];
+                for (int k = i; k < mat[j].size(); ++k) {
+                    mat[j][k] = mat[j][k] - cociente * mat[i][k];
+                }
+                b[j] = b[j] - cociente * b[i];
+            }
+        }
+    }
 }
 
 vector<double> resolverSistema (Matriz &mat, vector<double> &b) {
-    eliminacionGaussiana(mat);
+    eliminacionGaussiana(mat, b);
     int n = b.size();
     int j;
     vector<double> res(n,0);

@@ -35,3 +35,4 @@ src/codigo_tp/.idea/*
 src/codigo_tp/cmake-build-debug/*
 src/scripts/__pycache__
 src/.deps
+src/codigo_tp/CMakeLists.txt

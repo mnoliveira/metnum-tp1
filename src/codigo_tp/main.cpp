@@ -5,8 +5,7 @@ int main(int argc, char *argv[]) {
     string inputPath;
     string outputPath;
     int metodo;
-
-    //Por ahora para probar
+    
     if (argc < 4) {
         printf("Faltan parametros de entrada.");
         return 0;
