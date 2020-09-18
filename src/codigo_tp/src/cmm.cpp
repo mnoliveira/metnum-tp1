@@ -1,4 +1,5 @@
 #include "common.h"
+#include "cmm.h"
 
 void transformarEntradaEnCMM(Entrada &entrada, CMM &res) {
     //Inicializo la matriz en 0

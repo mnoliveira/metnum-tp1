@@ -31,6 +31,7 @@
 *.out
 *.app
 
-.idea/*
-cmake-build-debug/*
-
+src/codigo_tp/.idea/*
+src/codigo_tp/cmake-build-debug/*
+src/scripts/__pycache__
+src/.deps
