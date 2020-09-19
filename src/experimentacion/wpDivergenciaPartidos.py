@@ -1,7 +1,7 @@
 from general import *
 
 wpSinDivergencia = tprun("1", "nba_2016.in", "nba_2016.out")
-wp = tprun("0", "nba_2016_divergencia_de_partidos.in", "nba_2016_divergencia_de_partidos.out")
+wp = tprun("1", "nba_2016_divergencia_de_partidos.in", "nba_2016_divergencia_de_partidos.out")
 nombres = getNombres("nombres_nba")
 
 def scatterPlot(data, color):
@@ -18,7 +18,7 @@ df = pd.DataFrame(data={
     'wp': wp,
     'wpSinDivergencia': wpSinDivergencia
 })
-df.sort_values('wp', inplace=True)
+df.sort_values('wpSinDivergencia', inplace=True)
 df.reset_index(inplace=True)
 
 
