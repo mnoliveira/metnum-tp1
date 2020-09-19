@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
     Entrada entrada = cargarEntrada(inputPath);
 
-    if (metodo > 2) {
+    if (metodo > 3) {
         printf("Metodo inválido");
         return 1;
     }
@@ -35,6 +35,9 @@ int main(int argc, char *argv[]) {
         case 2:
             r = goles(entrada);
             break;
+        case 3:
+            r = promedio(entrada);
+            break;
     }
 
     ofstream outputFile;
@@ -47,7 +50,7 @@ int main(int argc, char *argv[]) {
 }
 
 void write_vector (vector<double> &v, ofstream &output){
-    for (uint i = 0; i < v.size(); i++){
+    for (int i = 0; i < v.size(); i++){
         output << v[i] << "\n";
     }
 }

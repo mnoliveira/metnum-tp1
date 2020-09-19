@@ -3,5 +3,6 @@
 #include "src/cmm.h"
 #include "src/wp.h"
 #include "src/goles.h"
+#include "src/promedio.h"
 
 void write_vector (vector<double> &v, ofstream &output);
