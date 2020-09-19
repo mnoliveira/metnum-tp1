@@ -2,8 +2,6 @@ import subprocess as sp
 import numpy as np
 import random
 
-import pickle
-
 # configuracion de plots
 from matplotlib import pyplot as plt
 from matplotlib import rc, rcParams, axes
@@ -36,8 +34,5 @@ def getNombres(file):
             nombre = line.rstrip('\n')
             nombres.append(nombre)
     return nombres
-
-# for x in range(100):
-#     print(1003 + x, 14, np.random.randint(75, 115), 23, np.random.randint(75, 115))
 
 
