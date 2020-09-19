@@ -19,6 +19,6 @@ vector<double> goles (Entrada &entrada) {
     for(int k = 0; k < res.size(); k++) {
         res[k] = (res[k] - min) / (max - min);
     }
-
     return res;
+
 }

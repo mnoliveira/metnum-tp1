@@ -4,6 +4,7 @@
 void transformarEntradaEnCMM(Entrada &entrada, CMM &res) {
     //Inicializo la matriz en 0
     Matriz C(entrada.cantidadEquipos, vector<double>(entrada.cantidadEquipos, 0));
+    res.b = vector<double>(entrada.cantidadEquipos, 0);
     res.C = C;
     for (int k = 0; k < entrada.cantidadPartidos; k++) {
         int equipoI = entrada.partidos[k][iEquipo] - 1;
