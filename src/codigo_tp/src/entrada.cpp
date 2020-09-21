@@ -21,9 +21,7 @@ Entrada cargarEntrada(string path) {
     Partidos partidos(entrada.cantidadPartidos, vector<int>(5));
 
     int i = 0, j = 0;
-    //TODO: OJO! aca deberiamos leer en funcion de P no de archivo.eof()
-    //while(i < entrada.cantidadPartidos)
-    while (!archivo.eof()){
+    while(i < entrada.cantidadPartidos){
 
         archivo >> partidos[i][j];
 

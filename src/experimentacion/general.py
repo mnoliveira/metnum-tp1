@@ -9,6 +9,8 @@ from matplotlib import axes as mplibAxes
 import pandas as pd
 import platform
 
+import pickle
+
 # class partido:
 #     def __init__(self, fecha, iEquipo, iGoles, jEquipo, jGoles):
 #         self.fecha = fecha
@@ -39,5 +41,14 @@ def getNombres(file):
             nombre = line.rstrip('\n')
             nombres.append(nombre)
     return nombres
+
+def getRankings(file):
+    rankings = []
+    with open(file, 'r') as f:
+        rankings=[]
+        for line in f:
+            ranking = float(line.rstrip('\n'))
+            rankings.append(ranking)
+    return rankings
 
 

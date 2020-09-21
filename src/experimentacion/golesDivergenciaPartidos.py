@@ -30,7 +30,7 @@ scatterPlot(df.golesSinDivergencia, 'blue', "Original")
 
 
 plt.yticks(df.index, df.nombres)
-plt.title('Rankings NBA 2016 con divergencia de partidos', fontdict={'size':20})
+plt.title('Rankings NBA 2016 con divergencia de partidos  - Método GOLES', fontdict={'size':20})
 plt.xlabel('Ranking')
 plt.grid(linestyle='--', alpha=0.5)
 plt.xlim(-0.01, 1.01)
