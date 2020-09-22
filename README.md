@@ -65,6 +65,7 @@ Para la ejecucion de las experimentaciones se requerira tener instaladas las sig
 - matplotlib
 - pandas
 - pickle
+- Jupyter Notebook (jupyterlabs)
 
 ### Ejecutar experimento
 Posicionarse en la carpeta de experimentacion.
@@ -81,8 +82,7 @@ python [experimentoDeseado].py
 ### Experimentos disponibles
 | Archivo | Detalle |
 | - | - |
-| `calcAnalisisCuantitativo.py` | Calculo del Analisis cuantitativo |
-| `verAnalisisCuantitativo.py` | Visualizacion del Analisis cuantitativo |
+| `calcAnalisisCuantitativo.py` | Calculo del Analisis cuantitativo (tarda unos minutos) |
 | `cmmJusticia.py` | Grafico para mostrar la "justicia" de CMM |
 | `colleyDivergenciaDePartidos.py` | Ranking de Colley con 100 partidas más |
 | `comparativa3metodos.py` | Comparacion del ranking de Colley, WP y Goles |
@@ -91,17 +91,11 @@ python [experimentoDeseado].py
 | `promedioDivergenciaDePartidos.py`  | Ranking de Promedio con 100 partidas más |
 | `promedioEquipoHacker.py`  | Resultado de la participacion del equipo Hacker con el metodo de Promedio |
 
-### Análisis cuantitativo
+### Experimentos rapidos
 
-Posicionado en la carpeta de experimentacion los siguientes comandos en orden:
+Se proveen también dos experimentos rápidos hechos en Jupyter Notebook para la visualización clara de los mismos. El documento se llama experimentosRapidos.ipynb y posee dos experimentos:
+- Visualización del análisis cuantitativo
+- Análisis de los goles de Memphis
 
-Para calcular los resultados
-```
-python calcAnalisisCuantitativo.py
-```
-Para ver los resultados
-```
-python verAnalisisCuantitativo.py
-```
 
 
