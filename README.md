@@ -27,7 +27,9 @@ g++ ./src/codigo_tp/src/*.cpp ./src/codigo_tp/main.cpp -o src/tp
 #### Ejemplo de ejecución una vez compilado
 
 ```
-./tp ./test/test.in ./test/test1.out
+./tp ./test/test.in ./test/test1.out 0
+OJO, desde metnum-tp1 tuve que acceder a src y ademas test.in no existe.
+./src/tp src/tests/test1.in src/tests/test1.out 0
 ```
 
 # Scripts
@@ -79,7 +81,8 @@ python [experimentoDeseado].py
 ### Experimentos disponibles
 | Archivo | Detalle |
 | - | - |
-| `calcAnalisisCuantitativo.py` | Analisis cuantitativo |
+| `calcAnalisisCuantitativo.py` | Calculo del Analisis cuantitativo |
+| `verAnalisisCuantitativo.py` | Visualizacion del Analisis cuantitativo |
 | `cmmJusticia.py` | Grafico para mostrar la "justicia" de CMM |
 | `colleyDivergenciaDePartidos.py` | Ranking de Colley con 100 partidas más |
 | `comparativa3metodos.py` | Comparacion del ranking de Colley, WP y Goles |
