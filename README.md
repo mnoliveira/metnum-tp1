@@ -3,13 +3,13 @@
 ## Compilar
 
 ```
-g++ ./src/codigo_tp/src/*.cpp ./src/codigo_tp/main.cpp -o tp
+g++ ./src/codigo_tp/src/*.cpp ./src/codigo_tp/main.cpp -o src/tp
 ```
 
 ## Ejecutar
 
 ```
-./tp [inputPath] [outputPath] [metodo]
+./src/tp [inputPath] [outputPath] [metodo]
 ```
 
 - `inputPath` path del archivo de donde extraer los datos
@@ -32,13 +32,23 @@ g++ ./src/codigo_tp/src/*.cpp ./src/codigo_tp/main.cpp -o tp
 
 # Scripts
 
-### Ejecutar test provistos por la catedra
+### compilar con script provisto por la catedra
 
 Primero nos paramos en /src
 
 ```
 cd src
 ```
+
+compilamos
+
+```
+python metnum.py build
+```
+
+### Ejecutar test provistos por la catedra
+
+Parado en la carpeta src
 
 Ejecutamos los test
 
