@@ -27,8 +27,6 @@ g++ ./src/codigo_tp/src/*.cpp ./src/codigo_tp/main.cpp -o src/tp
 #### Ejemplo de ejecución una vez compilado
 
 ```
-./tp ./test/test.in ./test/test1.out 0
-OJO, desde metnum-tp1 tuve que acceder a src y ademas test.in no existe.
 ./src/tp src/tests/test1.in src/tests/test1.out 0
 ```
 
