@@ -1,7 +1,7 @@
 from general import *
 
 colleySinDivergencia = tprun("0", "nba_2016.in", "nba_2016.out")
-colley = tprun("0", "nba_2016_divergencia_centro.in", "nba_2016_divergencia_centro.out")
+colley = tprun("0", "nba_2016_divergencia_de_partidos.in", "nba_2016_divergencia_de_partidos.out")
 nombres = getNombres("nombres_nba")
 
 def scatterPlot(data, color, label):

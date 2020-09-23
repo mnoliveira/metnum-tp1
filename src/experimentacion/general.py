@@ -52,3 +52,9 @@ def getRankings(file):
     return rankings
 
 
+# for i in range(90):
+#     print(f"{1003 + i} 10 {np.random.randint(100, 130)} 23 {np.random.randint(70, 99)}")
+
+# for i in range(10):
+#     print(f"{1093 + i} 10 {np.random.randint(70, 99)} 23 {np.random.randint(100, 130)}")
+
